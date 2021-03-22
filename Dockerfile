@@ -1,6 +1,6 @@
-FROM node:10-alpine
+FROM node:12-alpine
 
-RUN apk --update --no-cache add bash git openssh-client
+RUN apk --update --no-cache add bash git openssh-client curl
 
 ENV HEROKU_CLI_VERSION 7.51.0
 
